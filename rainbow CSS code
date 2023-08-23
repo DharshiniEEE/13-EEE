@@ -1,0 +1,34 @@
+body {
+    background-color: #333;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .rainbowText {
+    font-family:arial black;
+    font-size:70px;
+    background-image: 
+      linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;  
+    animation: move 35s linear infinite;
+  }
+  
+  @keyframes move {
+      to {
+          background-position: 4500vh;
+      }
+  }
+  @media screen and (max-width:900px){
+    .rainbowText{
+      font-size:2rem;
+    }
+  }
+  
+  @media screen and (max-width:600px){
+    .rainbowText{
+      font-size:1rem;
+    }
+  }
