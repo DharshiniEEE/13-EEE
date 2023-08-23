@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<title>cm to Inches Length Converter</title>
+<body>
+
+<h2>Length Converter</h2>
+<p>Type a value in the cm field to convert the value to Inches:</p>
+
+<p>
+  <label>cm</label>
+  <input id="inputcm" type="number" placeholder="cm" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Inches: <span id="outputInches"></span></p>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputInches").innerHTML=valNum*0.39370;
+}
+</script>
+</body>
+</html>
